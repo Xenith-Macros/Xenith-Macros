@@ -1,0 +1,564 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Xenith Macros</title>
+
+  <style>
+
+    .legal-links{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-left:20px;
+}
+
+.legal-links a{
+  color:var(--muted);
+  text-decoration:none;
+  padding:7px 12px;
+  border:1px solid var(--line);
+  border-radius:8px;
+  font-size:.85rem;
+  transition:.15s;
+}
+
+.legal-links a:hover{
+  color:var(--text);
+  border-color:var(--pink);
+  background:rgba(255,79,154,.08);
+}
+    :root{
+      --bg:#0f0a14; --card:#1a1220; --line:#2d2036;
+      --text:#f3eef7; --muted:#b4a8c0;
+      --pink:#ff4f9a; --orange:#ff9a3c; --purple:#7c4dff;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+
+    html{scroll-behavior:smooth}
+
+    body{
+      font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;
+      background:
+        radial-gradient(1200px 600px at 80% -10%,#3a1450 0%,transparent 60%),
+        radial-gradient(900px 500px at -10% 10%,#4a1030 0%,transparent 55%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.6;
+      min-height:100vh;
+    }
+
+    a{color:var(--orange)}
+
+    .wrap{
+      max-width:1000px;
+      margin:0 auto;
+      padding:0 20px;
+    }
+
+    header{
+      padding:22px 0;
+      position:sticky;
+      top:0;
+      z-index:10;
+      background:rgba(15,10,20,.8);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--line);
+    }
+
+    header .wrap{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+
+    .brand{
+      font-weight:800;
+      font-size:1.25rem;
+      letter-spacing:.5px;
+      text-decoration:none;
+      color:var(--text);
+    }
+
+    .brand span{
+      background:linear-gradient(90deg,var(--orange),var(--pink));
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+    }
+
+    nav a{
+      color:var(--muted);
+      text-decoration:none;
+      margin-left:20px;
+      font-size:.95rem;
+    }
+
+    nav a:hover{color:var(--text)}
+
+    .page{
+      padding:70px 0 80px;
+    }
+
+    .page-header{
+      text-align:center;
+      margin-bottom:45px;
+    }
+
+    .page-header h1{
+      font-size:clamp(2.3rem,6vw,3.6rem);
+      line-height:1.1;
+      margin-bottom:12px;
+      letter-spacing:-1px;
+    }
+
+    .page-header h1 span{
+      background:linear-gradient(90deg,var(--orange),var(--pink));
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+    }
+
+    .updated{
+      color:var(--muted);
+      font-size:.9rem;
+    }
+
+    .legal-card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:32px;
+    }
+
+    .legal-section{
+      padding-bottom:28px;
+      margin-bottom:28px;
+      border-bottom:1px solid var(--line);
+    }
+
+    .legal-section:last-child{
+      border-bottom:0;
+      margin-bottom:0;
+      padding-bottom:0;
+    }
+
+    .legal-section h2{
+      font-size:1.35rem;
+      margin-bottom:10px;
+      color:var(--text);
+    }
+
+    .legal-section p{
+      color:var(--muted);
+      margin-bottom:12px;
+    }
+
+    .legal-section p:last-child{
+      margin-bottom:0;
+    }
+
+    .legal-section ul{
+      padding-left:22px;
+      color:var(--muted);
+      margin:10px 0;
+    }
+
+    .legal-section li{
+      margin-bottom:7px;
+    }
+
+    .notice{
+      margin:18px 0;
+      padding:16px 18px;
+      border:1px solid rgba(255,154,60,.25);
+      border-radius:14px;
+      background:rgba(255,154,60,.07);
+      color:var(--muted);
+    }
+
+    .notice strong{
+      color:var(--orange);
+    }
+
+    .back{
+      display:inline-block;
+      margin-top:25px;
+      color:var(--muted);
+      text-decoration:none;
+      font-size:.92rem;
+    }
+
+    .back:hover{
+      color:var(--text);
+    }
+
+    footer{
+      border-top:1px solid var(--line);
+      padding:30px 0 40px;
+      color:var(--muted);
+      font-size:.88rem;
+    }
+
+    footer .cols{
+      display:flex;
+      justify-content:space-between;
+      gap:24px;
+      flex-wrap:wrap;
+      margin-bottom:18px;
+    }
+
+    footer a{
+      color:var(--muted);
+      text-decoration:none;
+      display:block;
+      margin-bottom:4px;
+    }
+
+    footer a:hover{color:var(--text)}
+
+    footer h4{
+      color:var(--text);
+      margin-bottom:8px;
+      font-size:.95rem;
+    }
+
+    footer p{
+      margin-bottom:6px;
+    }
+
+    @media(max-width:720px){
+      nav{display:none}
+
+      .page{
+        padding:45px 0 55px;
+      }
+
+      .legal-card{
+        padding:22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="index (2).html">
+      Xenith <span>Macros</span>
+    </a>
+
+    <nav>
+      <a href="index (2).html#store">Store</a>
+      <a href="index (2).html#buy">How to buy</a>
+      <a href="index (2).html#faq">FAQ</a>
+
+      <span class="legal-links">
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </span>
+    </nav>
+
+  </div>
+</header>
+
+  <main class="page">
+    <div class="wrap">
+
+      <div class="page-header">
+        <h1>Privacy <span>Policy</span></h1>
+        <p class="updated">Last updated: October 7, 2026</p>
+      </div>
+
+      <div class="legal-card">
+
+        <section class="legal-section">
+          <h2>1. Introduction</h2>
+
+          <p>
+            This Privacy Policy explains how Xenith Macros handles
+            information when you visit the Xenith Macros website or
+            interact with services currently provided by Xenith Macros.
+          </p>
+
+          <p>
+            Xenith Macros respects your privacy and does not sell your
+            personal information.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2>2. Information Collected Through This Website</h2>
+
+          <p>
+            The Xenith Macros website currently functions primarily as an
+            information and product page.
+          </p>
+
+          <p>
+            At the current stage of the website, Xenith Macros does not
+            operate a user account system, Discord login system, or
+            built-in payment system on the website.
+          </p>
+
+          <p>
+            The website does not intentionally request sensitive personal
+            information through forms or account registration.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2>3. Information You Provide Directly</h2>
+
+          <p>
+            If you contact Xenith Macros through Discord for support or a
+            purchase, information you voluntarily provide may be visible
+            to Xenith Macros.
+          </p>
+
+          <p>
+            Depending on the interaction, this may include information
+            such as your Discord username, Discord user ID, messages,
+            purchase details, or information needed to provide technical
+            support.
+          </p>
+
+          <p>
+            This information is used for purposes such as customer
+            support, purchase verification, software delivery, license
+            management, and resolving technical issues.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2>4. Payment Information</h2>
+
+          <p>
+            Xenith Macros does not currently collect or store customers'
+            debit-card or credit-card details through the website.
+          </p>
+
+          <p>
+            If payment is processed through a third-party payment
+            provider, payment information is handled by that provider
+            according to its own privacy policy and terms.
+          </p>
+
+          <div class="notice">
+            <strong>Future payment system:</strong> Xenith Macros may
+            introduce direct website payments through Paystack in the
+            future. If this functionality is implemented, this Privacy
+            Policy will be updated to accurately explain what information
+            is collected and how it is used.
+          </div>
+        </section>
+
+        <section class="legal-section">
+          <h2>5. License Information</h2>
+
+          <p>
+            When a customer purchases software that uses a license key,
+            Xenith Macros may retain information necessary to associate
+            the license with the customer's purchase.
+          </p>
+
+          <p>
+            This may include a license key, purchase information, and
+            relevant customer or Discord information.
+          </p>
+
+          <p>
+            This information is used to provide access to purchased
+            software, manage licenses, prevent unauthorized sharing, and
+            provide customer support.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2>6. Discord</h2>
+
+          <p>
+            Xenith Macros currently uses Discord for customer
+            communication, support, and software delivery.
+          </p>
+
+          <p>
+            Discord is a third-party service. Information shared through
+            Discord is also subject to Discord's own privacy policy and
+            terms.
+          </p>
+
+          <p>
+            Xenith Macros does not control how Discord independently
+            processes information on its platform.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2>7. Website Analytics and Tracking</h2>
+
+          <p>
+            Xenith Macros does not currently intentionally use advertising
+            trackers or sell visitor information to third parties.
+          </p>
+
+          <p>
+            However, website hosting providers, browsers, networks, or
+            other technical services may process limited technical
+            information as necessary to deliver and secure the website.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2>8. How Information Is Used</h2>
+
+          <p>
+            Information provided to Xenith Macros may be used for
+            purposes including:
+          </p>
+
+          <ul>
+            <li>Providing customer support.</li>
+            <li>Confirming purchases.</li>
+            <li>Delivering purchased software.</li>
+            <li>Managing software licenses and license keys.</li>
+            <li>Responding to customer questions.</li>
+            <li>Preventing unauthorized use or distribution of software.</li>
+            <li>Maintaining and improving Xenith Macros services.</li>
+          </ul>
+        </section>
+
+        <section class="legal-section">
+          <h2>9. Information Sharing</h2>
+
+          <p>
+            Xenith Macros does not sell or rent customer personal
+            information.
+          </p>
+
+          <p>
+            Information may be shared with third-party service providers
+            when necessary to provide a service requested by the customer,
+            such as payment processing, hosting, communication, or
+            software delivery.
+          </p>
+
+          <p>
+            Third-party providers may process information according to
+            their own privacy policies and terms.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2>10. Data Retention</h2>
+
+          <p>
+            Information may be retained for as long as reasonably
+            necessary to provide customer support, maintain purchase and
+            license records, prevent abuse, resolve disputes, or meet
+            applicable legal obligations.
+          </p>
+
+          <p>
+            Information that is no longer reasonably necessary may be
+            deleted when appropriate.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2>11. Your Privacy Requests</h2>
+
+          <p>
+            If you have questions about personal information associated
+            with your interaction with Xenith Macros, you may contact
+            Xenith Macros through the official Discord server.
+          </p>
+
+          <p>
+            Depending on the circumstances and applicable requirements,
+            you may request information about the personal information
+            associated with your interaction, or request that information
+            be corrected or deleted where appropriate.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2>12. Children's Privacy</h2>
+
+          <p>
+            Xenith Macros does not intentionally request sensitive
+            personal information from children.
+          </p>
+
+          <p>
+            Users should not provide unnecessary personal information
+            when contacting Xenith Macros.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2>13. Changes to This Privacy Policy</h2>
+
+          <p>
+            This Privacy Policy may be updated when Xenith Macros
+            introduces new features, services, payment systems, or
+            data-processing practices.
+          </p>
+
+          <p>
+            When changes are made, the updated version will be posted on
+            this page and the "Last updated" date will be changed.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2>14. Contact</h2>
+
+          <p>
+            If you have questions about this Privacy Policy or how Xenith
+            Macros handles information, please contact Xenith Macros
+            through the official Discord server linked on the website.
+          </p>
+        </section>
+
+      </div>
+
+      <a class="back" href="index (2).html">← Back to Xenith Macros</a>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="cols">
+
+        <div>
+          <h4>Xenith Macros</h4>
+          <a href="https://discord.gg/xQhh537BUm">Discord</a>
+        </div>
+
+        <div>
+          <h4>Legal</h4>
+          <a href="terms.html">Terms of Service</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+
+      </div>
+
+      <p>&copy; 2026 Xenith Macros. All rights reserved.</p>
+
+      <p>
+        Xenith Macros is an independent project and is not affiliated with,
+        endorsed by, or sponsored by Roblox Corporation. Roblox is a
+        trademark of Roblox Corporation.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
